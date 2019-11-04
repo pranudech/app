@@ -17,7 +17,7 @@
 	<!-- HEADER -->
 	<header>
 		<!-- top Header -->
-		<div id="top-header">
+		<!-- <div id="top-header">
 			<div class="container">
 				<div class="pull-left">
 					<span>Welcome to E-shop!</span>
@@ -46,7 +46,7 @@
 					</ul>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- /top Header -->
 
 		<!-- header -->
@@ -64,9 +64,9 @@
 					<!-- Search -->
 					<div class="header-search">
 						<form>
-							<input class="input search-input" type="text" placeholder="Enter your keyword">
+							<input class="input search-input" type="text" placeholder="ค้นหา">
 							<select class="input search-categories">
-								<option value="0">All Categories</option>
+								<option value="0">ประเภททั้งหมด</option>
 								<option value="1">Category 01</option>
 								<option value="1">Category 02</option>
 							</select>
@@ -77,8 +77,9 @@
 				</div>
 				<div class="pull-right">
 					<ul class="header-btns">
+						
 						<!-- Account -->
-						<li class="header-account dropdown default-dropdown">
+						<!-- <li class="header-account dropdown default-dropdown">
 							<div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
 								<div class="header-btns-icon">
 									<i class="fa fa-user-o"></i>
@@ -94,7 +95,7 @@
 								<li><a href="#"><i class="fa fa-unlock-alt"></i> Login</a></li>
 								<li><a href="#"><i class="fa fa-user-plus"></i> Create An Account</a></li>
 							</ul>
-						</li>
+						</li> -->
 						<!-- /Account -->
 
 						<!-- Cart -->
@@ -102,11 +103,11 @@
 							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
 								<div class="header-btns-icon">
 									<i class="fa fa-shopping-cart"></i>
-									<span class="qty">3</span>
+									<span class="qty">1</span>
 								</div>
-								<strong class="text-uppercase">My Cart:</strong>
+								<strong class="text-uppercase">สินค้าในตะกร้า</strong>
 								<br>
-								<span>35.20$</span>
+								<span>35.00 ฿</span>
 							</a>
 							<div class="custom-menu">
 								<div id="shopping-cart">
@@ -116,7 +117,7 @@
 												<img src="../img/thumb-product01.jpg" alt="">
 											</div>
 											<div class="product-body">
-												<h3 class="product-price">$32.50 <span class="qty">x3</span></h3>
+												<h3 class="product-price">฿ 25.00 <span class="qty">x3</span></h3>
 												<h2 class="product-name"><a href="#">Product Name Goes Here</a></h2>
 											</div>
 											<button class="cancel-btn"><i class="fa fa-trash"></i></button>
@@ -126,15 +127,15 @@
 												<img src="../img/thumb-product01.jpg" alt="">
 											</div>
 											<div class="product-body">
-												<h3 class="product-price">$32.50 <span class="qty">x3</span></h3>
+												<h3 class="product-price">฿ 15.00 <span class="qty">x3</span></h3>
 												<h2 class="product-name"><a href="#">Product Name Goes Here</a></h2>
 											</div>
 											<button class="cancel-btn"><i class="fa fa-trash"></i></button>
 										</div>
 									</div>
 									<div class="shopping-cart-btns">
-										<button class="main-btn">View Cart</button>
-										<button class="primary-btn">Checkout <i class="fa fa-arrow-circle-right"></i></button>
+										<button class="main-btn">ดูสินค้าทั้งหมด</button>
+										<button class="primary-btn">จ่ายเงิน <i class="fa fa-arrow-circle-right"></i></button>
 									</div>
 								</div>
 							</div>
@@ -162,7 +163,7 @@
 			<div id="responsive-nav">
 				<!-- category nav -->
 				<div class="category-nav">
-					<span class="category-header">Categories <i class="fa fa-list"></i></span>
+					<span class="category-header">ประเภททั้งหมด <i class="fa fa-list"></i></span>
 					<ul class="category-list">
 						<li class="dropdown side-dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Women’s Clothing <i class="fa fa-angle-right"></i></a>
