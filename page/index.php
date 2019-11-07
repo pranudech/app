@@ -67,8 +67,8 @@
 							<input class="input search-input" type="text" placeholder="ค้นหา">
 							<select class="input search-categories">
 								<option value="0">ประเภททั้งหมด</option>
-								<option value="1">Category 01</option>
-								<option value="1">Category 02</option>
+								<option value="1">ทดสอบ 01</option>
+								<option value="1">ทดสอบ 02</option>
 							</select>
 							<button class="search-btn"><i class="fa fa-search"></i></button>
 						</form>
@@ -361,9 +361,12 @@
 				<div class="menu-nav">
 					<span class="menu-header">Menu <i class="fa fa-bars"></i></span>
 					<ul class="menu-list">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Shop</a></li>
-						<li class="dropdown mega-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Women <i class="fa fa-caret-down"></i></a>
+						<li><a href="#">หน้าแรก</a></li>
+						<li><a href="#">รายการสินค้า</a></li>
+						<li><a href="#">วิธีการสั่งซื้อ</a></li>
+						<li><a href="#">ติดตามการสั่งซื้อ</a></li>
+						<li><a href="#">เกี่ยวกับเรา</a></li>
+						<!-- <li class="dropdown mega-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Women <i class="fa fa-caret-down"></i></a>
 							<div class="custom-menu">
 								<div class="row">
 									<div class="col-md-4">
@@ -510,7 +513,7 @@
 								<li><a href="product-page.html">Product Details</a></li>
 								<li><a href="checkout.html">Checkout</a></li>
 							</ul>
-						</li>
+						</li> -->
 					</ul>
 				</div>
 				<!-- menu nav -->
