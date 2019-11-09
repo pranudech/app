@@ -30,7 +30,25 @@ function listAll_CompanyQurey(){
 
 // ================ TBPRODUCT ================//
 function listAll_ProductQurey(){
-	$SQL = " select * from product order by product_id ";
+	$SQL = " SELECT * FROM product order by product_id ";
+	return $SQL;
+}
+
+// ================ TB_FN_PAGE_VIEW ================//
+function listAll_PageViewQurey($v_DATE){
+	$SQL = " SELECT * FROM tb_fn_page_view WHERE date = '$v_DATE' ";
+	return $SQL;
+}
+function listAll_SUMPageViewQurey(){
+	$SQL = " SELECT SUM(PAGE_VIEW_DAY) AS TOTAL FROM tb_fn_page_view ";
+	return $SQL;
+}
+function update_PageViewQurey($v_VIEW_DAY, $v_VIEW_ALL, $v_DATE){
+	$SQL = " UPDATE tb_fn_page_view SET PAGE_VIEW_DAY = '$v_VIEW_DAY', PAGE_VIEW_ALL = '$v_VIEW_ALL'  WHERE date = '$v_DATE' ";
+	return $SQL;
+}
+function add_PageViewQurey($v_VIEW_DAY, $v_VIEW_ALL, $v_DATE){
+	$SQL = " INSERT INTO tb_fn_page_view (PAGE_VIEW_DAY, PAGE_VIEW_ALL, DATE) VALUES ($v_VIEW_DAY, $v_VIEW_ALL, '$v_DATE') ";
 	return $SQL;
 }
 

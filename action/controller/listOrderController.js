@@ -1,5 +1,5 @@
 var app = angular.module('myApp', []);
-var uRL_LOCAL = "http://localhost/kwanseeds/api/";
+var uRL_LOCAL = "http://localhost/app/api/";
 var uRL_PRODUCTION = "http://app01.kwanseeds.com/api/";
 var getURL_PATH = uRL_LOCAL;
 

@@ -8,12 +8,11 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 	<title>ขวัญเมล็ดพันธุ์ ขวัญใจเกษตรกร</title>
-
-	<?php include("./include/include_css.php");?>
+	<?php include("./include/include_css.php"); ?>
 
 </head>
 
-<body>
+<body ng-app="myApp">
 	<!-- HEADER -->
 	<header>
 		<!-- top Header -->
@@ -56,7 +55,7 @@
 					<!-- Logo -->
 					<div class="header-logo">
 						<a class="logo" href="#">
-							<img src="../img/logo.png" alt="">
+							<img src="../img/logo2.png" alt="">
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -77,7 +76,7 @@
 				</div>
 				<div class="pull-right">
 					<ul class="header-btns">
-						
+
 						<!-- Account -->
 						<!-- <li class="header-account dropdown default-dropdown">
 							<div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
@@ -172,7 +171,8 @@
 									<div class="col-md-4">
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -184,7 +184,8 @@
 									<div class="col-md-4">
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -196,7 +197,8 @@
 									<div class="col-md-4">
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -226,7 +228,8 @@
 									<div class="col-md-4">
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -236,7 +239,8 @@
 										<hr>
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -248,7 +252,8 @@
 									<div class="col-md-4">
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -258,7 +263,8 @@
 										<hr>
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -286,7 +292,8 @@
 									<div class="col-md-4">
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -296,7 +303,8 @@
 										<hr>
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -308,7 +316,8 @@
 									<div class="col-md-4">
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -318,7 +327,8 @@
 										<hr>
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -330,7 +340,8 @@
 									<div class="col-md-4">
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -340,7 +351,8 @@
 										<hr>
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -361,11 +373,11 @@
 				<div class="menu-nav">
 					<span class="menu-header">Menu <i class="fa fa-bars"></i></span>
 					<ul class="menu-list">
-						<li><a href="#">หน้าแรก</a></li>
+						<li><a href="http://localhost/app/page/index.php">หน้าแรก</a></li>
 						<li><a href="#">รายการสินค้า</a></li>
 						<li><a href="#">วิธีการสั่งซื้อ</a></li>
 						<li><a href="#">ติดตามการสั่งซื้อ</a></li>
-						<li><a href="#">เกี่ยวกับเรา</a></li>
+						<li><a href="http://localhost/app/page/aboutUs.php">เกี่ยวกับเรา</a></li>
 						<!-- <li class="dropdown mega-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Women <i class="fa fa-caret-down"></i></a>
 							<div class="custom-menu">
 								<div class="row">
@@ -1386,110 +1398,22 @@
 	<!-- /section -->
 
 	<!-- FOOTER -->
-	<footer id="footer" class="section section-grey">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- footer widget -->
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="footer">
-						<!-- footer logo -->
-						<div class="footer-logo">
-							<a class="logo" href="#">
-		            <img src="../img/logo.png" alt="">
-		          </a>
-						</div>
-						<!-- /footer logo -->
-
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-
-						<!-- footer social -->
-						<ul class="footer-social">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-						</ul>
-						<!-- /footer social -->
-					</div>
-				</div>
-				<!-- /footer widget -->
-
-				<!-- footer widget -->
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="footer">
-						<h3 class="footer-header">My Account</h3>
-						<ul class="list-links">
-							<li><a href="#">My Account</a></li>
-							<li><a href="#">My Wishlist</a></li>
-							<li><a href="#">Compare</a></li>
-							<li><a href="#">Checkout</a></li>
-							<li><a href="#">Login</a></li>
-						</ul>
-					</div>
-				</div>
-				<!-- /footer widget -->
-
-				<div class="clearfix visible-sm visible-xs"></div>
-
-				<!-- footer widget -->
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="footer">
-						<h3 class="footer-header">Customer Service</h3>
-						<ul class="list-links">
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Shiping & Return</a></li>
-							<li><a href="#">Shiping Guide</a></li>
-							<li><a href="#">FAQ</a></li>
-						</ul>
-					</div>
-				</div>
-				<!-- /footer widget -->
-
-				<!-- footer subscribe -->
-				<div class="col-md-3 col-sm-6 col-xs-6">
-					<div class="footer">
-						<h3 class="footer-header">Stay Connected</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-						<form>
-							<div class="form-group">
-								<input class="input" placeholder="Enter Email Address">
-							</div>
-							<button class="primary-btn">Join Newslatter</button>
-						</form>
-					</div>
-				</div>
-				<!-- /footer subscribe -->
-			</div>
-			<!-- /row -->
-			<hr>
-			<!-- row -->
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<!-- footer copyright -->
-					<div class="footer-copyright">
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					</div>
-					<!-- /footer copyright -->
-				</div>
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</footer>
+	<?php include("./include/include_footer.php"); ?>
 	<!-- /FOOTER -->
 
+	<!-- ANGULAR JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="../action/controller/footerController.js"></script>
+	<!-- END ANGULAR JS -->
+
 	<!-- jQuery Plugins -->
-	<script src="../js/jquery.min.js"></script>
+	<?php include("./include/include_jquery.php"); ?>
+	<!-- <script src="../js/jquery.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="../js/slick.min.js"></script>
 	<script src="../js/nouislider.min.js"></script>
 	<script src="../js/jquery.zoom.min.js"></script>
-	<script src="../js/main.js"></script>
+	<script src="../js/main.js"></script> -->
 
 </body>
 

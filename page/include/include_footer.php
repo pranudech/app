@@ -1,6 +1,6 @@
 <footer id="footer" class="section section-grey">
 		<!-- container -->
-		<div class="container">
+		<div class="container" ng-controller="footerCountPageController">
 			<!-- row -->
 			<div class="row">
 				<!-- footer widget -->
@@ -13,8 +13,9 @@
 		          </a>
 						</div>
 						<!-- /footer logo -->
-
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+						<p>จำนวนผู้เข้าชมวันนี้ : {{ DATA[0].PAGE_VIEW_DAY }} ครั้ง</p>
+						<p>จำนวนผู้เข้าชมทั้งหมด : {{ SUM[0].TOTAL }} ครั้ง</p>
+						<p></p>
 
 						<!-- footer social -->
 						<ul class="footer-social">
@@ -63,13 +64,13 @@
 				<!-- footer subscribe -->
 				<div class="col-md-3 col-sm-6 col-xs-6">
 					<div class="footer">
-						<h3 class="footer-header">Stay Connected</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+						<h3 class="footer-header">รับข้อมูลข่าวสาร</h3>
+						<p>กรอกอีเมล์เพื่อรับข้อมูลข่าวสารจากเรา</p>
 						<form>
 							<div class="form-group">
-								<input class="input" placeholder="Enter Email Address">
+								<input class="input" placeholder="อีเมล์">
 							</div>
-							<button class="primary-btn">Join Newslatter</button>
+							<button class="primary-btn">สมัครรับข้อมูลข่าวสาร</button>
 						</form>
 					</div>
 				</div>
@@ -83,7 +84,7 @@
 					<!-- footer copyright -->
 					<div class="footer-copyright">
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | develop web <i class="fa fa-cube" aria-hidden="true"></i> by <a href="https://google.com" target="_blank">PNDCODING</a>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					</div>
 					<!-- /footer copyright -->

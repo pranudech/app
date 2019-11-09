@@ -7,14 +7,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	
+
 	<title>ขวัญเมล็ดพันธุ์ ขวัญใจเกษตรกร</title>
 
-	<?php include("./include/include_css.php");?>
+	<?php include("./include/include_css.php"); ?>
 
 </head>
 
-<body>
+<body ng-app="myApp">
 	<!-- HEADER -->
 	<header>
 		<!-- top Header -->
@@ -56,8 +56,8 @@
 				<div class="pull-left">
 					<!-- Logo -->
 					<div class="header-logo">
-						<a class="logo" href="#">
-							<img src="../img/logo.png" alt="">
+						<a class="logo" href="http://localhost/app/index.php">
+							<img src="../img/logo2.png" alt="">
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -78,7 +78,7 @@
 				</div>
 				<div class="pull-right">
 					<ul class="header-btns">
-						
+
 						<!-- Account -->
 						<!-- <li class="header-account dropdown default-dropdown">
 							<div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
@@ -164,7 +164,7 @@
 			<div id="responsive-nav">
 				<!-- category nav -->
 				<div class="category-nav show-on-click">
-					<span class="category-header">Categories <i class="fa fa-list"></i></span>
+					<span class="category-header">ประเภททั้งหมด <i class="fa fa-list"></i></span>
 					<ul class="category-list">
 						<li class="dropdown side-dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Women’s Clothing <i class="fa fa-angle-right"></i></a>
@@ -173,7 +173,8 @@
 									<div class="col-md-4">
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -185,7 +186,8 @@
 									<div class="col-md-4">
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -197,7 +199,8 @@
 									<div class="col-md-4">
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -227,7 +230,8 @@
 									<div class="col-md-4">
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -237,7 +241,8 @@
 										<hr>
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -249,7 +254,8 @@
 									<div class="col-md-4">
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -259,7 +265,8 @@
 										<hr>
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -287,7 +294,8 @@
 									<div class="col-md-4">
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -297,7 +305,8 @@
 										<hr>
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -309,7 +318,8 @@
 									<div class="col-md-4">
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -319,7 +329,8 @@
 										<hr>
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -331,7 +342,8 @@
 									<div class="col-md-4">
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -341,7 +353,8 @@
 										<hr>
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3></li>
+												<h3 class="list-links-title">Categories</h3>
+											</li>
 											<li><a href="#">Women’s Clothing</a></li>
 											<li><a href="#">Men’s Clothing</a></li>
 											<li><a href="#">Phones & Accessories</a></li>
@@ -362,11 +375,11 @@
 				<div class="menu-nav">
 					<span class="menu-header">Menu <i class="fa fa-bars"></i></span>
 					<ul class="menu-list">
-						<li><a href="#">หน้าแรก</a></li>
+						<li><a href="http://localhost/app/page/index.php">หน้าแรก</a></li>
 						<li><a href="#">รายการสินค้า</a></li>
 						<li><a href="#">วิธีการสั่งซื้อ</a></li>
 						<li><a href="#">ติดตามการสั่งซื้อ</a></li>
-						<li><a href="#">เกี่ยวกับเรา</a></li>
+						<li><a href="http://localhost/app/page/aboutUs.php">เกี่ยวกับเรา</a></li>
 						<!-- <li class="dropdown mega-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Women <i class="fa fa-caret-down"></i></a>
 							<div class="custom-menu">
 								<div class="row">
@@ -540,19 +553,55 @@
 		<!-- container -->
 		<div class="container">
 			<!-- row -->
+			<div style="width:100%;text-align: center;">
+				<img src="../img/aboutus/logo.png" style="width:200px; height:200px;">
+			</div>
+			<hr>
 			<div class="row">
-				<div>
-				<blockquote>
-					<p>ที่อยู่  :  เลขที่ 438/1 ตลาดสุรนคร  ถนนมิตรภาพ-หนองคาย ตำบลในเมือง อำเภอเมือง จังหวัดนครราชสีมา 30000</p>
-					<p>ร้านขวัญเมล็ดพันธุ์ จำหน่าย  เมล็ดพันธุ์ผักตลาดทุกชนิด ปัจจัยทางการเกษตร ทั้งปลีกและส่ง และพันธุ์กล้าผัก ในราคาที่เหมาะสม</p>
-					<p>สนใจติดต่อเรา</p>
-					<p>เบอร์โทร : 044-087-677, 081-718-5878, 081-705-3541</p>
-				</blockquote>
+				<div class="col-md-6">
+					<blockquote>
+						<p>ร้านขวัญเมล็ดพันธุ์ จำหน่าย เมล็ดพันธุ์ผักตลาดทุกชนิด ปัจจัยทางการเกษตร ทั้งปลีกและส่ง และพันธุ์กล้าผัก ในราคาที่เหมาะสม</p>
+						<strong class="text-uppercase">ที่อยู่ :</strong>
+						เลขที่ 438/1 ตลาดสุรนคร ถนนมิตรภาพ-หนองคาย ตำบลในเมือง อำเภอเมือง จังหวัดนครราชสีมา 30000<br>
+						<strong class="text-uppercase"> *** สนใจติดต่อเรา ***</strong><br>
+						<strong class="text-uppercase">เบอร์โทร :</strong> 044-087-677, 081-718-5878, 081-705-3541
+					</blockquote>
 				</div>
-
-				<div style="width:100%;text-align: center;">
-					<iframe  src="https://www.google.com/maps/d/embed?mid=1C-bDowT_PaYheHiO54RL_jvxpFduUDgQ" width="85%" height="500"></iframe>
+				<div class="col-md-6">
+					<h4 class="text-uppercase">ส่งข้อความเพื่อติดต่อเรา</h4>
+					<!-- <p>ข้อมูลของคุณจะไม่ถูกเผยแพร่</p> -->
+					<form action="../api/line/line.php" method="post" class="review-form">
+						<div class="form-group">
+							<input class="input" type="text" name="name" maxlength="255" placeholder="ชื่อ-นามสกุล" />
+						</div>
+						<div class="form-group">
+							<input class="input" type="text" name="lineID" maxlength="255" placeholder="ไลน์ไอดี" />
+						</div>
+						<div class="form-group">
+							<input class="input" type="text" name="phone" maxlength="10" placeholder="เบอร์โทร" />
+						</div>
+						<div class="form-group">
+							<textarea class="input" name="question" maxlength="255" placeholder="คำถาม"></textarea>
+						</div>
+						<div class="form-group">
+							<div class="input-rating">
+								<strong class="text-uppercase">คะแนน : </strong>
+								<div class="stars">
+									<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+									<input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+									<input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+									<input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+									<input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+								</div>
+							</div>
+						</div>
+						<button class="primary-btn">ส่งข้อความ</button>
+					</form>
 				</div>
+			</div>
+			<hr>
+			<div style="width:100%;text-align: center;">
+				<iframe src="https://www.google.com/maps/d/embed?mid=1C-bDowT_PaYheHiO54RL_jvxpFduUDgQ" width="85%" height="500"></iframe>
 			</div>
 			<!-- /row -->
 		</div>
@@ -561,11 +610,16 @@
 	<!-- /section -->
 
 	<!-- FOOTER -->
-	<?php include("./include/include_footer.php");?>
+	<?php include("./include/include_footer.php"); ?>
 	<!-- /FOOTER -->
 
+	<!-- ANGULAR JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="../action/controller/footerController.js"></script>
+	<!-- END ANGULAR JS -->
+
 	<!-- jQuery Plugins -->
-	<?php include("./include/include_jquery.php");?>
+	<?php include("./include/include_jquery.php"); ?>
 	<!-- <script src="../js/jquery.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="../js/slick.min.js"></script>
