@@ -13,7 +13,7 @@
 	$postdata = file_get_contents("php://input");
 	$request = json_decode($postdata);
 	
-	$request = array('ACTION' => 'LIST_PAGE_VIEW');
+	//$request = array('ACTION' => 'LIST_PAGE_GET');
 	$ACTION = null;
 	if($request != null){
 		foreach($request as $key => $val){
@@ -35,8 +35,6 @@
 	$COMPANY = array();
 	
 	if($ACTION == 'LIST_PAGE_VIEW'){
-
-
 		$v_DATE_NOW = date("Y-m-d");
 		$TYPESQL_SELECT = listAll_PageViewQurey($v_DATE_NOW);
 		$DATA_1 = getConnectionQurey($TYPESQL_SELECT);
@@ -61,9 +59,20 @@
 		$return_data['LOG'] = $TYPESQL_SELECT;
 		$return_data['STATUS'] = 'SUCCESS';
 
-		// echo "<pre>";
-		//echo $TYPE[0]['PAGE_VIEW_DAY'];
+		header('Content-Type: application/json');
+		echo json_encode($return_data, JSON_UNESCAPED_UNICODE);
 
+	}else if($ACTION == 'LIST_PAGE_GET'){
+
+		$v_DATE_NOW_GET = date("Y-m-d");
+		// echo $v_DATE_NOW;
+		$TYPESQL_SELECT = listAll_PageViewQurey($v_DATE_NOW_GET);
+		$DATA_1 = getConnectionQurey($TYPESQL_SELECT);
+
+		$return_data['DATA'] = $DATA_1;
+		$return_data['SUM'] = getConnectionQurey(listAll_SUMPageViewQurey());
+		$return_data['LOG'] = $TYPESQL_SELECT;
+		$return_data['STATUS'] = 'SUCCESS';
 		header('Content-Type: application/json');
 		echo json_encode($return_data, JSON_UNESCAPED_UNICODE);
 	}

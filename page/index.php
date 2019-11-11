@@ -158,26 +158,22 @@
 	<!-- NAVIGATION -->
 	<div id="navigation">
 		<!-- container -->
-		<div class="container">
+		<div class="container" ng-controller="listProductTypeController">
 			<div id="responsive-nav">
 				<!-- category nav -->
 				<div class="category-nav">
 					<span class="category-header">ประเภททั้งหมด <i class="fa fa-list"></i></span>
 					<ul class="category-list">
-						<li class="dropdown side-dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Women’s Clothing <i class="fa fa-angle-right"></i></a>
+						<li class="dropdown side-dropdown" ng-repeat="(keyType, valueType) in tYPE">
+							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">{{ valueType.type_name }}<i class="fa fa-angle-right"></i></a>
 							<div class="custom-menu">
 								<div class="row">
-									<div class="col-md-4">
+									<div class="col-md-4" >
 										<ul class="list-links">
 											<li>
 												<h3 class="list-links-title">Categories</h3>
 											</li>
-											<li><a href="#">Women’s Clothing</a></li>
-											<li><a href="#">Men’s Clothing</a></li>
-											<li><a href="#">Phones & Accessories</a></li>
-											<li><a href="#">Jewelry & Watches</a></li>
-											<li><a href="#">Bags & Shoes</a></li>
+											<li><a href="#">{{valueSubType.subtype_name}}</a></li>
 										</ul>
 										<hr class="hidden-md hidden-lg">
 									</div>
@@ -221,7 +217,8 @@
 								</div>
 							</div>
 						</li>
-						<li><a href="#">Men’s Clothing</a></li>
+
+						<!-- <li><a href="#">Men’s Clothing</a></li>
 						<li class="dropdown side-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Phones & Accessories <i class="fa fa-angle-right"></i></a>
 							<div class="custom-menu">
 								<div class="row">
@@ -364,7 +361,7 @@
 							</div>
 						</li>
 						<li><a href="#">Bags & Shoes</a></li>
-						<li><a href="#">View All</a></li>
+						<li><a href="#">View All</a></li> -->
 					</ul>
 				</div>
 				<!-- /category nav -->
@@ -1403,7 +1400,7 @@
 
 	<!-- ANGULAR JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-	<script src="../action/controller/footerController.js"></script>
+	<script src="../action/controller/indexController.js"></script>
 	<!-- END ANGULAR JS -->
 
 	<!-- jQuery Plugins -->
