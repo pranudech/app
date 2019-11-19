@@ -11,9 +11,9 @@ app.controller('listProductTypeController', function ($scope, $http) {
         data: { 'ACTION': 'LIST_MAIN_PAGE' }
     }).then(function mySuccess(response) {
         $scope.tYPE = response.data.TYPE;
-        $scope.sUBTYPE = response.data.SUBTYPE;
-        $scope.cOMPANY = response.data.COMPANY;
-        $scope.pRODUCT = response.data.pRODUCT;
+        // $scope.sUBTYPE = response.data.SUBTYPE;
+        // $scope.cOMPANY = response.data.COMPANY;
+        // $scope.pRODUCT = response.data.pRODUCT;
         console.log(response.data);
     }, function myError(response) {
         //$scope.data = response.data;

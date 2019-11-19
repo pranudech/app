@@ -165,43 +165,50 @@
 					<span class="category-header">ประเภททั้งหมด <i class="fa fa-list"></i></span>
 					<ul class="category-list">
 						<li class="dropdown side-dropdown" ng-repeat="(keyType, valueType) in tYPE">
-							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">{{ valueType.type_name }}<i class="fa fa-angle-right"></i></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">{{ valueType.type_name }} ({{ valueType.count_type }})<i class="fa fa-angle-right"></i></a>
 							<div class="custom-menu">
 								<div class="row">
-									<div class="col-md-4" >
+									<div class="col-md-4">
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3>
+												<h3 class="list-links-title">{{ valueType.type_name }} ({{ valueType.count_type }})</h3>
 											</li>
-											<li><a href="#">{{valueSubType.subtype_name}}</a></li>
+											<li ng-repeat="(keySubType, valueSubType) in valueType.SUBTYPE"">
+												<a href="#{{valueSubType.subtype_id}}" ng-if="$index < 13 ">{{ valueSubType.subtype_name }} ({{ valueSubType.countSubType }})</a>
+											</li>
 										</ul>
 										<hr class="hidden-md hidden-lg">
 									</div>
 									<div class="col-md-4">
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3>
+												<h3 class="list-links-title">&nbsp;</h3>
 											</li>
-											<li><a href="#">Women’s Clothing</a></li>
-											<li><a href="#">Men’s Clothing</a></li>
-											<li><a href="#">Phones & Accessories</a></li>
-											<li><a href="#">Jewelry & Watches</a></li>
-											<li><a href="#">Bags & Shoes</a></li>
+											<li ng-repeat="(keySubType, valueSubType) in valueType.SUBTYPE"">
+												<a href="#" ng-if="$index > 13 && $index < 27 ">{{ valueSubType.subtype_name }} ({{ valueSubType.countSubType }})</a>
+											</li>
 										</ul>
-										<hr class="hidden-md hidden-lg">
 									</div>
 									<div class="col-md-4">
 										<ul class="list-links">
 											<li>
-												<h3 class="list-links-title">Categories</h3>
+												<h3 class="list-links-title">&nbsp;</h3>
 											</li>
-											<li><a href="#">Women’s Clothing</a></li>
-											<li><a href="#">Men’s Clothing</a></li>
-											<li><a href="#">Phones & Accessories</a></li>
-											<li><a href="#">Jewelry & Watches</a></li>
-											<li><a href="#">Bags & Shoes</a></li>
+											<li ng-repeat="(keySubType, valueSubType) in valueType.SUBTYPE"">
+												<a href="#" ng-if="$index > 27 && $index < 40 ">{{ valueSubType.subtype_name }} ({{ valueSubType.countSubType }})</a>
+											</li>
 										</ul>
 									</div>
+									<!-- <div class="col-md-4">
+										<ul class="list-links">
+											<li>
+												<h3 class="list-links-title">&nbsp;</h3>
+											</li>
+											<li ng-repeat="(keySubType, valueSubType) in valueType.SUBTYPE"">
+												<a href="#" ng-if="$index > 30 && $index < 40">{{ valueSubType.subtype_name }} ({{ valueSubType.countSubType }})</a>
+											</li>
+										</ul>
+									</div> -->
 								</div>
 								<div class="row hidden-sm hidden-xs">
 									<div class="col-md-12">

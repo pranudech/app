@@ -9,13 +9,19 @@ function verified_LoginQurey($USERNAME, $PASSWORD){
 
 // ================ TB_PRODUCT_TYPE ================//
 function listAll_ProductTypeQurey(){
-	$SQL = " select type_id, type_name, (select count(type_id) from product_subtype where type_id = type.type_id) as count_type from Product_type type order by type_name ";
+	$SQL = " select type_id, type_name, (select count(type_id) from product_subtype where type_id = type.type_id) as count_type from Product_type type order by type_id ";
 	return $SQL;
 }
 
 // ================ TB_PRODUCT_SUBTYPE ================//
 function listAll_ProductSubTypeQurey(){
 	$SQL = "select subtype_id,subtype_name,type_id,(select count(subtype_id) from product where subtype_id = sub.subtype_id) as countSubType from product_subtype sub";
+	//$SQL = " select * from product_subtype ";
+	return $SQL;
+}
+
+function listAll_ProductSubTypeByTypeIDQurey($type_id){
+	$SQL = "select subtype_id,subtype_name,type_id,(select count(subtype_id) from product where subtype_id = sub.subtype_id) as countSubType from product_subtype sub where type_id = $type_id ";
 	//$SQL = " select * from product_subtype ";
 	return $SQL;
 }
@@ -31,6 +37,10 @@ function listAll_CompanyQurey(){
 // ================ TBPRODUCT ================//
 function listAll_ProductQurey(){
 	$SQL = " SELECT * FROM product order by product_id ";
+	return $SQL;
+}
+function listAll_ProductBySubTypeIDQurey($subtype_id){
+	$SQL = " SELECT * FROM product where subtype_id = $subtype_id order by product_id ";
 	return $SQL;
 }
 
