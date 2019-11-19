@@ -18,16 +18,7 @@ app.controller('listProductTypeController', function ($scope, $http) {
     }, function myError(response) {
         //$scope.data = response.data;
     });
-
-    $scope.count = 0;
-    $scope.myFunc = function (subtype_id) {
-        console.log(subtype_id);
-    };
-
-    $scope.ShowHide = function(){
-        $scope.IsVisible = true;
-    }
-    
+	
 });
 
 app.controller('footerCountPageController', function ($scope, $http) {
