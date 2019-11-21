@@ -4,21 +4,16 @@ var uRL_PRODUCTION = "http://app01.kwanseeds.com/api/";
 var getURL_PATH = uRL_LOCAL;
 
 app.controller('listProductTypeController', function ($scope, $http) {
-
     $http({
         url: getURL_PATH + "listOrderAction.php",
         method: "POST",
         data: { 'ACTION': 'LIST_MAIN_PAGE' }
     }).then(function mySuccess(response) {
         $scope.tYPE = response.data.TYPE;
-        // $scope.sUBTYPE = response.data.SUBTYPE;
-        // $scope.cOMPANY = response.data.COMPANY;
-        // $scope.pRODUCT = response.data.pRODUCT;
         console.log(response.data);
     }, function myError(response) {
-        //$scope.data = response.data;
+        console.log('LIST_MAIN_PAGE ', response.data)
     });
-	
 });
 
 app.controller('footerCountPageController', function ($scope, $http) {
@@ -33,26 +28,18 @@ app.controller('footerCountPageController', function ($scope, $http) {
             $scope.DATA = response.data.DATA;
             $scope.SUM = response.data.SUM;
         }, function myError(response) {
-            console.log('footerCountPageController ', response.data)
+            console.log('LIST_PAGE_VIEW ', response.data)
         });
     }else{
         $http({
-            url: getURL_PATH,
+            url: getURL_PATH + "pageView.php",
             method: "POST",
             data: { 'ACTION': 'LIST_PAGE_GET' }
         }).then(function mySuccess(response) {
             $scope.DATA = response.data.DATA;
             $scope.SUM = response.data.SUM;
-            console.log('object', $scope.DATA)
         }, function myError(response) {
-            console.log('footerCountPageController ', response.data)
+            console.log('LIST_PAGE_GET ', response.data)
         });
     }
 });
-
-// app.controller('getProductBySubTypeIDController', function ($scope, $http) {
-//     $scope.count = 0;
-//     $scope.myFunc = function () {
-//         $scope.count++;
-//     };
-// });

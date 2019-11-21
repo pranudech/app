@@ -1,14 +1,14 @@
 var app = angular.module('myApp', []);
 var uRL_LOCAL = "http://localhost/app/api/";
 var uRL_PRODUCTION = "http://app01.kwanseeds.com/api/";
-var getURL_PATH = uRL_LOCAL + "pageView.php";
+var getURL_PATH = uRL_LOCAL;
 
 app.controller('footerCountPageController', function ($scope, $http) {
     $scope.page = sessionStorage.getItem("CHECK_PAGE_COUNT");
-    if($scope.page == undefined){
-        sessionStorage.setItem("CHECK_PAGE_COUNT","false");
+    if ($scope.page == undefined) {
+        sessionStorage.setItem("CHECK_PAGE_COUNT", "false");
         $http({
-            url: getURL_PATH,
+            url: getURL_PATH + "pageView.php",
             method: "POST",
             data: { 'ACTION': 'LIST_PAGE_VIEW' }
         }).then(function mySuccess(response) {
@@ -17,9 +17,9 @@ app.controller('footerCountPageController', function ($scope, $http) {
         }, function myError(response) {
             console.log('footerCountPageController ', response.data)
         });
-    }else{
+    } else {
         $http({
-            url: getURL_PATH,
+            url: getURL_PATH + "pageView.php",
             method: "POST",
             data: { 'ACTION': 'LIST_PAGE_GET' }
         }).then(function mySuccess(response) {
