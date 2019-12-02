@@ -376,7 +376,7 @@
 					<span class="menu-header">Menu <i class="fa fa-bars"></i></span>
 					<ul class="menu-list">
 						<li><a href="http://localhost/app/page/index.php">หน้าแรก</a></li>
-						<li><a href="#">รายการสินค้า</a></li>
+                        <li><a href="http://localhost/app/page/products.php">รายการสินค้า</a></li>
 						<li><a href="#">วิธีการสั่งซื้อ</a></li>
 						<li><a href="#">ติดตามการสั่งซื้อ</a></li>
 						<li><a href="http://localhost/app/page/aboutUs.php">เกี่ยวกับเรา</a></li>

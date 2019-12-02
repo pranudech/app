@@ -1,22 +1,7 @@
-var app = angular.module('myApp', ['ngRoute']);
+var app = angular.module('myApp', []);
 var uRL_LOCAL = "http://localhost/app/api/";
 var uRL_PRODUCTION = "http://app01.kwanseeds.com/api/";
 var getURL_PATH = uRL_LOCAL;
-
-app.config(function($routeProvider) {
-	$routeProvider
-		.when('/home1', {
-			templateUrl: 'aboutUS.php',
-			// controller: 'listProductTypeController'
-		})
-		.when('/view2', {
-			templateUrl: 'view2.html',
-			controller: 'SecondController'
-		})
-		.otherwise({
-			redirectTo: '/view1'
-		});
-});
 
 app.controller('listProductTypeController', function ($scope, $http) {
     $http({

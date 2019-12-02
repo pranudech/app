@@ -134,8 +134,7 @@
                                     </div>
                                     <div class="shopping-cart-btns">
                                         <button class="main-btn">ดูสินค้าทั้งหมด</button>
-                                        <button class="primary-btn">จ่ายเงิน <i
-                                                class="fa fa-arrow-circle-right"></i></button>
+                                        <button class="primary-btn">จ่ายเงิน <i class="fa fa-arrow-circle-right"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -166,9 +165,7 @@
                     <span class="category-header">ประเภททั้งหมด <i class="fa fa-list"></i></span>
                     <ul class="category-list">
                         <li class="dropdown side-dropdown" ng-repeat="(keyType, valueType) in tYPE">
-                            <a class="dropdown-toggle" data-toggle="dropdown"
-                                aria-expanded="true">{{ valueType.type_name }} ({{ valueType.count_type }})<i
-                                    class="fa fa-angle-right"></i></a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">{{ valueType.type_name }} ({{ valueType.count_type }})<i class="fa fa-angle-right"></i></a>
                             <div class="custom-menu">
                                 <div class="row">
                                     <div class="col-md-4">
@@ -178,8 +175,8 @@
                                                     ({{ valueType.count_type }})</h3>
                                             </li>
                                             <li ng-repeat="(keySubType, valueSubType) in valueType.SUBTYPE">
-												<a href=" #{{valueSubType.subtype_id}}" ng-if="$index < 13 ">{{ valueSubType.subtype_name }}
-                                                ({{ valueSubType.countSubType }})</a>
+                                                <a href="products.php?SUBTYPEID={{valueSubType.subtype_id}}" ng-if="$index < 13 ">{{ valueSubType.subtype_name }}
+                                                    ({{ valueSubType.countSubType }})</a>
                                             </li>
                                         </ul>
                                         <hr class="hidden-md hidden-lg">
@@ -190,8 +187,8 @@
                                                 <h3 class="list-links-title">&nbsp;</h3>
                                             </li>
                                             <li ng-repeat="(keySubType, valueSubType) in valueType.SUBTYPE">
-											<a href=" #{{valueSubType.subtype_id}}" ng-if="$index > 13 && $index < 27 ">{{ valueSubType.subtype_name }}
-                                                ({{ valueSubType.countSubType }})</a>
+                                                <a href=" #{{valueSubType.subtype_id}}" ng-if="$index > 13 && $index < 27 ">{{ valueSubType.subtype_name }}
+                                                    ({{ valueSubType.countSubType }})</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -201,8 +198,8 @@
                                                 <h3 class="list-links-title">&nbsp;</h3>
                                             </li>
                                             <li ng-repeat="(keySubType, valueSubType) in valueType.SUBTYPE">
-											<a href=" #{{valueSubType.subtype_id}}" ng-if="$index > 27 && $index < 40 ">{{ valueSubType.subtype_name }}
-                                                ({{ valueSubType.countSubType }})</a>
+                                                <a href=" #{{valueSubType.subtype_id}}" ng-if="$index > 27 && $index < 40 ">{{ valueSubType.subtype_name }}
+                                                    ({{ valueSubType.countSubType }})</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -385,7 +382,7 @@
                     <span class="menu-header">Menu <i class="fa fa-bars"></i></span>
                     <ul class="menu-list">
                         <li><a href="http://localhost/app/page/index.php">หน้าแรก</a></li>
-                        <li><a href="#">รายการสินค้า</a></li>
+                        <li><a href="http://localhost/app/page/products.php">รายการสินค้า</a></li>
                         <li><a href="#">วิธีการสั่งซื้อ</a></li>
                         <li><a href="#">ติดตามการสั่งซื้อ</a></li>
                         <li><a href="http://localhost/app/page/aboutUs.php">เกี่ยวกับเรา</a></li>
@@ -1439,11 +1436,12 @@
     <!-- /section -->
 
     <!-- FOOTER -->
-     <?php include("./include/include_footer.php"); ?>
-	<!-- /FOOTER -->
+    <?php include("./include/include_footer.php"); ?>
+    <!-- /FOOTER -->
 
     <!-- ANGULAR JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"></script>
     <script src="../action/controller/indexController.js"></script>
     <!-- END ANGULAR JS -->
 
