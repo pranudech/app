@@ -13,6 +13,7 @@
 </head>
 
 <body ng-app="myApp">
+<div ng-view></div>
     <!-- HEADER -->
     <header>
         <!-- top Header -->
@@ -381,6 +382,7 @@
                 <div class="menu-nav">
                     <span class="menu-header">Menu <i class="fa fa-bars"></i></span>
                     <ul class="menu-list">
+                        <li><a href="#/test">TEST</a></li>
                         <li><a href="http://localhost/app/page/index.php">หน้าแรก</a></li>
                         <li><a href="http://localhost/app/page/products.php">รายการสินค้า</a></li>
                         <li><a href="#">วิธีการสั่งซื้อ</a></li>
@@ -1441,8 +1443,9 @@
 
     <!-- ANGULAR JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <script src="../action/controller/indexController.js"></script>
+    <script src="../action/routePage.js"></script>
     <!-- END ANGULAR JS -->
 
     <!-- jQuery Plugins -->

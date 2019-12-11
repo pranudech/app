@@ -1,9 +1,10 @@
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', ['ngRoute']);
 var uRL_LOCAL = "http://localhost/app/api/";
 var uRL_PRODUCTION = "http://app01.kwanseeds.com/api/";
 var getURL_PATH = uRL_LOCAL;
 
-app.controller('footerCountPageController', function ($scope, $http) {
+app.controller('footerCountPageController', function ($scope, $http, $route) {
+    console.log('object', $route.ID)
     $scope.page = sessionStorage.getItem("CHECK_PAGE_COUNT");
     if ($scope.page == undefined) {
         sessionStorage.setItem("CHECK_PAGE_COUNT", "false");
